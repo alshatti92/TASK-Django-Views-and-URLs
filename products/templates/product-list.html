@@ -7,16 +7,19 @@
     <title>Document</title>
 </head>
 <body>
+    
     <div class="container">
+     
         <h1> PRODUCTS</h1>
         {% for product in products %}
+    
         <div>
-            <h3>{{product.name}}</h3>
+            <h3>{{ product.name }}</h3>
             <h4>{{product.price}}kwd</h4>
 
         </div>
-
-        {% end for %}
+    
+     {% endfor %}
 
     </div>
     

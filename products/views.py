@@ -36,13 +36,13 @@ def get_products(request):
 
     new_products = []
     for product in products:
-        new_products.apppend(
+        new_products.append(
             {
                 "name": product.name,
                 "price": product.price,
             }
         )
 
-    context = {"product": new_products}
+    context = {"products": new_products}
 
     return render(request, "product-list.html", context)
